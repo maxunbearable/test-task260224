@@ -1,0 +1,6 @@
+<div class="border round m-2 d-flex justify-content-center flex-column align-items-center" style="width: 300px">
+  <h4>Title: <b>{{product.title}}</b></h4>
+  <h4>Price: <b>{{product.price}}$</b></h4>
+  <img src="{{product.image}}" width="200" height="300" alt="Product"/>
+  <button class="btn btn-success" (click)="productBuy.emit(product)">Buy</button>
+</div>
