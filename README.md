@@ -1,27 +1,34 @@
-# TestTask2602
+Створити Html розмітку яка буде включати основний блок для контенту і меню
+При розмірі екрану менше 575px скласти меню в бургер
+  При відкритті такого меню основний блок має подвинутись на ширину меню (наче меню виштовхує контент в бік)
+Написати функцію на js яка приймає в якості параметру string і повертає це слово в оберненому вигляді (передали  “молоток” - отримати “котолом”)
+Написати функцію яка генерує пароль який включає наступні умови та має загальну довжину 8 символів:
+Велику літеру
+Маленьку літеру
+Символ(знак)
+Цифру
+Виконати запит https://fakestoreapi.com/products та вивести результати в блоці контенту в раніше створеній розмітці окремемими блоками(картками) відобразивши наступні поля з відповіді:
+title
+price
+description
+image
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
+*При клікі на таку картку виводити в консоль об’єкт продукту на який натиснули
 
-## Development server
+Angular (замість 6 завдання):
+Реалізувати компоненту для відображення товарів (батьківська компонента).
+Кожен товар мусить бути окремою компонентою яка містить нижче зазначені поля об’єкту та кнопку “придбати”.
+Виконати запит https://fakestoreapi.com/products але щоб в батьківську копоненту результатом відповіді повернувся Observable зі зміненими об’єктами де кожен продукт має тільки:
+title
+price
+image
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+Відобразити ці об’єкти де кожен об’єкт це компонента товару.
+При клікі на кнопку  “придбати” отримати в батьківському компоненті об’єкт товару на який натиснули і вивести в консоль.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Реалізувати пошук товарів за title.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
